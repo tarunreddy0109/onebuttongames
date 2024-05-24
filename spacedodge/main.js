@@ -25,7 +25,7 @@ cc  cc
 ];
 
 options = {
-  isPlayingBgm: false,
+  isPlayingBgm: true,
   isReplayEnabled: true,
 };
 
@@ -40,7 +40,7 @@ let shipSpeed;
 function update() {
   if (!ticks) {
     enemyShips = [vec(50, 5)];
-    ship = { loc: vec(50, 80) };
+    ship = { loc: vec(50, 85) };
     nextEnemyDist = 7;
     shipSpeed = 0.2;
   }
